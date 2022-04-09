@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './home.css'
 import qq from './qq.jpeg';
 import css from './css.png';
@@ -21,7 +21,11 @@ import p5 from './p5.jpeg'
 import p6 from './p6.jpeg'
 
 const Home = ({joblists}) => {
-  
+  const [jobs, setJobs] = useState([])
+
+  useEffect(()=>{
+      setJobs(joblists)
+  },[])
     
   return (
     <div className='App'>
@@ -43,7 +47,7 @@ const Home = ({joblists}) => {
                 </div>
             </div>
             <div className='employee' >
-                <h3>100+ Employees</h3>
+                <h3>100+ Employees</h3><br/>
                 <div className='employes'>
                 <img src={man1} style={{width:'40px', height:'40px',borderRadius:'50%',marginLeft:'-7px'}} />
                     <img src={man2}style={{width:'40px',height:'40px',borderRadius:'50%',marginLeft:'-7px'}} />
@@ -53,7 +57,7 @@ const Home = ({joblists}) => {
                     
                 </div>
                 <div>
-                    <span>You upload your Cv</span>
+                    <span></span>
                 </div>
 
 
@@ -62,7 +66,7 @@ const Home = ({joblists}) => {
         </div>
             <div className='about' >
             <div className='abouts' style={{width:'80%', margin:'auto'}}>
-                <h1>About Our Job Agency</h1>
+                <h1>About Us</h1>
                 <p>An employment agency which matches employers to employees. JobHunt we operate public, federal, state
                     . The positions offered are often temporary, contact, intern based and sometimes full time jobs. We keep track of employees who apply for
                     a job post, skills and work history. This helps them match employees to new assignmnets. Many sectors outsources their rectruiting to employment agencies
@@ -71,6 +75,7 @@ const Home = ({joblists}) => {
                 </div>
                 <div className='agencies'>
                     <br/>
+                    <h1>Meet Our Employees</h1>
                 <img src={man1}  />
                     <img src={man2} />
                     <img src={man5} />
@@ -104,7 +109,7 @@ const Home = ({joblists}) => {
             </div>
         </div>
        
-          
+     
 
 <div className='cities'>
     <h1>Featured Places</h1>

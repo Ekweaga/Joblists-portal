@@ -61,7 +61,8 @@ const Apply = ({jobs}) => {
             <div className='form'>
               <div className='det'>
               <h3 style={{marginTop:'20px'}}>{e.level} {e.role}</h3> 
-              <span>{e.postedat}</span><br/><br/>
+              <span>{e.postedat}</span><br/>
+              <span> Exp : {e.exp}</span><br/><br/>
             <p> {e.des}</p>
             <span style={{float:'left',marginTop:'10px'}}>Location : {e.location}</span>
             <span style={{float:'right',marginTop:'10px'}}>Contract : {e.contract}</span>

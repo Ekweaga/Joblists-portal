@@ -16,13 +16,17 @@ const Job = ({job,setkeywords}) => {
      <br/>
       <h2>{job.position}</h2>
     
-      <span>{job.postedat} - {job.contract} -   {job.location}</span>  <div><button><Link to={`/apply/${job.id}`}>Apply Now</Link></button></div></div>
+      <span>{job.postedat} - {job.contract} </span><br/>
+      <span>Location :   {job.location}</span>  <br/>
+      <span>Salary : {job.salary}</span>  
+     </div>
      
       <div className='btn'>
         {keywords.map((key,id)=>{
       return <button key={id}  onClick={()=>setkeywords(key)}>{key}</button>
         })}
       </div>
+      <button><Link to={`/apply/${job.id}`}>Apply Now</Link></button>
      
     </div>
    

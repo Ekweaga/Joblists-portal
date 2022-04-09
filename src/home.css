@@ -370,3 +370,12 @@ margin:auto;
             margin-right: 0;
         }
 }
+@media(width:360px){
+    .about .agencies img{
+        width:130px;
+        height: 150px;
+        margin-left:20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

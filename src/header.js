@@ -1,9 +1,10 @@
 import React from 'react'
-import x from './x.png'
+import x from './x.png';
+import './header.css'
 
 const Header = ({keyword,removekeyword}) => {
   return (
-    <div>
+    <div className='head'>
       <ul style={{listStyle:'none',display:'flex'}}>
     {
 

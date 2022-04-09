@@ -14,10 +14,11 @@ function App() {
   {
     id:1,
     contract:"Full Time",
+    salary:"500k/month",
     level:"Senior",
     languages:["HTML","CSS"],
-    role:"Frontend ",
-    position:" developer",
+    role:"web  ",
+    position:" Front-end developer",
     postedat:"5h ago",
     featured:true,
     location:"Lagos",
@@ -29,10 +30,11 @@ function App() {
   {
     id:2,
     contract:"Internship",
+    salary:"100k/month",
     level:"Junior",
     languages:["HTML","Node"],
     role:" Fullstack ",
-    position:" developer",
+    position:" Full-stack developer",
     postedat:"20h ago",
     featured:true,
     location:"Lagos",
@@ -44,10 +46,11 @@ function App() {
   {
     id:3,
     contract:"Full Time",
+    salary:"500k/month",
     level:"Senior",
     languages:["ADOBE"],
-    role:"Product",
-    position:" Designer",
+    role:" Designer",
+    position:" Product Designer",
     postedat:"1d ago",
     featured:true,
     location:"Abuja",
@@ -60,10 +63,11 @@ function App() {
   {
     id:4,
     contract:"Full Time",
+    salary:"150k/month",
     level:"Junior",
     languages:["PHP"],
     role:"Entry ",
-    position:" developer",
+    position:" Junior developer",
     postedat:" 2d ago",
     featured:false,
     new:true,
@@ -74,11 +78,12 @@ function App() {
   },
   {
     id:5,
-    contract:"Intrenship",
+    contract:"Internship",
+    salary:"50k/month",
     level:"junior",
     languages:["FIGMA"],
     role:"UI/UX ",
-    position:" designer",
+    position:" UI/UX designer",
     postedat:"23h ago",
     featured:true,
     location:"Lagos",
@@ -89,10 +94,11 @@ function App() {
   {
     id:6,
     contract:"Full Time",
+    salary:"800k/month",
     level:"Senior",
     languages:["REACTJS"],
     role:"Frontend",
-    position:" developer",
+    position:" Front-end developer",
     postedat:"3d ago",
     featured:true,
     location:"Ibadan",
@@ -103,6 +109,7 @@ function App() {
   {
     id:7,
     contract:"Full Time",
+    salary:"800k/month",
     level:"Senior",
     languages:["FLUTTER"],
     role:"Mobiledevs",
@@ -117,10 +124,11 @@ function App() {
   {
     id:8,
     contract:"Full Time",
+    salary:"500k/month",
     level:"Proficient",
     languages:["HTML","CSS"],
-    role:"Frontend",
-    position:"  developer",
+    role:"Back-end",
+    position:"  Back-end developer",
     postedat:"10h ago",
     featured:false,
     new:true,
@@ -132,6 +140,7 @@ function App() {
   {
     id:9,
     contract:"Internship",
+    salary:"60k/month",
     level:"Entry",
     languages:["CI/CD"],
     role:"Devops devs",
@@ -146,6 +155,7 @@ function App() {
   {
     id:10,
     contract:"Full Time",
+    salary:"120k/month",
     level:"Junior",
     languages:["HTML"],
     role:"Web designer",
@@ -160,10 +170,11 @@ function App() {
   {
     id:11,
     contract:"Full Time",
+    salary:"400k/month",
     level:"Senior",
     languages:["HTML","CSS"],
     role:"Frontend ",
-    position:"developer",
+    position:"WordPress developer",
     postedat:"1 day ago",
     featured:false,
     new:true,
@@ -174,10 +185,11 @@ function App() {
   {
     id:12,
     contract:"Full Time",
+    salary:"900k/month",
     level:"Senior",
     languages:["PHP","NODEJS"],
     role:"Backend",
-    position:" developer",
+    position:" Back-end developer",
     postedat:"1 day ago",
     featured:false,
     location:"Akure",
@@ -188,10 +200,11 @@ function App() {
   {
     id:13,
     contract:"Internship",
+    salary:"50k/month",
     level:"Entry",
     languages:["C#"],
     role:"Backend",
-    position:" developer",
+    position:" Intern developer",
     postedat:"1 day ago",
     featured:true,
     location:"Jos",
@@ -202,10 +215,11 @@ function App() {
   {
     id:14,
     contract:"Contract",
+    salary:"1M/month",
     level:"Senior",
     languages:["HTML"],
     role:"Frontend",
-    position:"front-end devs",
+    position:"Angular developer",
     postedat:"1 day ago",
     featured:true,
     new:true,
@@ -216,10 +230,11 @@ function App() {
   {
     id:15,
     contract:"Full Time",
+    salary:"500k/month",
     level:"Senior",
     languages:["SEO","ADS"],
-    role:"Digital marketer",
-    position:"Marketer",
+    role:" marketer",
+    position:" Digital Marketer",
     postedat:"1 day ago",
     featured:true,
     new:false,
@@ -230,10 +245,11 @@ function App() {
   {
     id:16,
     contract:"Full Time",
+    salary:"90k/month",
     level:"Junior",
     languages:["NODEJS"],
     role:"Backend",
-    position:" developer",
+    position:"  Junior developer",
     postedat:"5 hr ago",
     featured:true,
     new:false,
@@ -244,10 +260,11 @@ function App() {
   {
     id:17,
     contract:"Internship",
+    salary:"90k/month",
     level:"Junior",
     languages:["FIGMA"],
     role:"Designer",
-    position:"Designer",
+    position:"Graphics Designer",
     postedat:"1 day ago",
     featured:true,
     new:false,
@@ -258,13 +275,14 @@ function App() {
   {
     id:18,
     contract:"Full Time",
+    salary:"600k/month",
     level:"Senior",
     languages:["SEO","MEDIA"],
     role:"media ",
-    position:" manager",
+    position:" SEO manager",
     postedat:"1 day ago",
     featured:true,
-    new:false,
+    new:true,
     location:"Lagos",
     tools:["SEO"],
     exp:"2 years",  des:"Developing new user-facing features and also ensure the technical feasibility of UI/Ux enginners.Advanced understanding of HTML,JS, CSS, Less. Able to meet up with deadlines under tight situations"
@@ -272,10 +290,11 @@ function App() {
   {
     id:19,
     contract:"Full Time",
+    salary:"150k/month",
     level:"Junior",
     languages:["JS"],
-    role:"Frontend",
-    position:"front-end devs",
+    role:"Web",
+    position:"React developer",
     postedat:"2d ago",
     featured:true,
     new:false,
@@ -286,10 +305,11 @@ function App() {
   {
     id:20,
     contract:"Contract",
+    salary:"200k/month",
     level:"Junior",
     languages:["FLUTTER"],
     role:"Andriod ",
-    position:"mobile devs",
+    position:"Flutter developer",
     postedat:"5d ago",
     featured:true,
     new:false,
@@ -300,13 +320,14 @@ function App() {
   {
     id:21,
     contract:"Full Time",
+    salary:"1M/month",
     level:"Senior",
     languages:["JAVA"],
     role:"Mobile ",
-    position:"Mobile Devs",
+    position:"Mobile Developer",
     postedat:"15h ago",
     featured:true,
-    new:false,
+    new:true,
     location:"Lagos"
     ,
     tools:[ "Java"],
@@ -318,12 +339,12 @@ function App() {
    <><div className="App">
       <BrowserRouter>
       <Router joblists ={joblists}/>
-      
+      <div className='footer'> <Footer/></div>
       </BrowserRouter>
     
    
     </div>
-    <div className='footer'> <Footer/></div></> 
+  </> 
   );
 }
 

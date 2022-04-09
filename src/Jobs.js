@@ -46,7 +46,7 @@ const Jobs = ({joblists}) => {
 
    <> 
    <div className='ss'>
-     <h1 style={{padding:'20px'}}>Job Vacancies</h1>
+     <h1 style={{padding:'20px'}}>Jobs</h1>
      <div className='headers'>
        {filteredwords.length > 0 && <Header keyword={filteredwords} removekeyword={deletekeyword}/>}
      </div>
