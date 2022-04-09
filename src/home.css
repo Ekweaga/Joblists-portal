@@ -1,0 +1,372 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.top{
+    background-color: rgb(5, 5, 59);
+    height:450px;
+    color:white;
+    padding:20px;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:30px;
+   
+}
+.header div h1{
+    font-size:35px;
+    margin:0;
+}
+.header img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+.header button{
+    background-color: orangered;
+    color:white;
+    padding:10px;
+    border:none;
+    width:200px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.header div{
+    margin:30px;
+}
+.header .img{
+    position:relative;
+}
+.header .img1{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:-30px;
+}
+.header .img2{
+    position: absolute;
+    top:0;
+    right:0;
+    margin:-30px;
+}
+.header .img3{
+    position: absolute;
+    right:0;
+    bottom:0;
+    margin:-30px;
+}
+
+.header .img4{
+    position: absolute;
+    left:0;
+    bottom:0;
+    margin:-23px;
+}
+.employee{
+    float:left;
+    margin:20px;
+}
+.employee .employes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+}
+.about p{
+    font-size:13px;
+    letter-spacing: 0.5px;
+}
+.about h1{
+    margin:20px;
+    font-size:17px;
+}
+.about .agencies img{
+    width:150px;
+    height: 150px;
+    margin-left:20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.processes{
+    width:90%;
+    margin:auto;
+    background-color: white;
+    margin-top:30px;
+    padding:20px;
+  
+    
+}
+.processes .process{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.processes .process div{
+    margin:20px;
+    background-color: rgb(253, 252, 252);
+    box-shadow: -3px 6px 10px  rgba(0, 0, 0, 0.35);
+    padding:20px;
+    height:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.processes .process div section{
+    color:orangered;
+    font-weight: 800;
+    font-size:20px;
+}
+.jobs{
+    padding:20px;
+    height:400px;
+   
+}
+.jobs .job{
+    column-count: 2;
+    align-items: center;
+}
+.jobs .job div{
+    background-color: white;
+    padding:15px;
+    margin:20px;
+
+}
+.search{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    background-color: rgb(223, 218, 211);
+    padding:30px;
+}
+.search b{
+    font-size: 15px;
+  
+}
+.search p{
+    font-size: 15px;
+    margin:15px;
+   
+}
+.search button{
+    background-color: rgb(4, 4, 49);
+    color:white;
+    padding: 10px;
+    border:none;
+    width:150px;
+}
+.cities{
+width:90%;
+margin:auto;
+margin-top:30px;
+margin-bottom: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cities h1{
+    font-size: 17px;
+    margin:20px;
+}
+.cities p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.cities .city{
+    column-count: 3;
+    width:100%;
+margin:auto;
+   
+}
+.cities .city img{
+   
+   width:300px;
+  height:200px;
+  border-radius: 10px;
+  filter: brightness(0.4);
+ 
+}
+.cities .city .p{
+    position: relative;
+}
+.cities .city .p span{
+    position: absolute;
+    color:white;
+    left:50px;
+    bottom:20px;
+}
+
+
+@media(max-width:700px){
+.top{
+    height:700px;
+}
+    .header{
+        display:block;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+    .header div h1{
+        font-size: 25px;
+        margin:0;
+    }
+   
+    .header img{
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+        padding:20px;
+    }
+    .header .img{
+        margin-top: 50px;
+    }
+    .header button{
+        background-color: orangered;
+        color:white;
+        padding:15px;
+        border:none;
+        width:200px;
+        font-size:16px;
+    }
+    .header .img1{
+        position: absolute;
+        top:0;
+        left:0;
+        margin:-20px;
+    }
+    .header .img2{
+        position: absolute;
+        top:0;
+        right:0;
+        margin:-20px;
+    }
+    .header .img3{
+        position: absolute;
+        right:0;
+        bottom:0;
+        margin:-20px;
+    }
+    
+    .header .img4{
+        position: absolute;
+        left:0;
+        bottom:0;
+        margin:-20px;
+    }
+    .employee{
+        float:none;
+        
+    }
+    .about p{
+        font-size:13px;
+    }
+    .processes{
+        width:90%;
+        margin:auto;
+        padding:20px;
+       
+    }
+    .processes h2{
+        padding:10px;
+       margin-bottom: 0;
+    }
+    .processes .process{
+        display:block;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+
+      
+    }
+    .processes .process div{
+        margin:20px;
+    }
+    .processes .process div section{
+        color:orangered;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .jobs{
+        padding:20px;
+        height:750px;
+       
+    }
+    .jobs .job{
+       
+       column-count: 1;
+       
+    }
+    .jobs .job div{
+        background-color: white;
+        margin:20px;
+       
+        
+       
+       
+    
+    }
+    .search{
+        display:block;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:20px;
+        background-color: rgb(223, 218, 211);
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    
+    .search button{
+        background-color: rgb(4, 4, 49);
+        color:white;
+        padding: 10px;
+        border:none;
+        width:200px;
+        margin-top: 15px;
+    }
+    .cities{
+        width:100%;
+        margin:auto;
+        margin-bottom: 20px;
+        }
+        .cities .city{
+            column-count: 2;
+        }
+        .cities .city img{
+           
+           width:500px;
+          height:300px;
+          border-radius: 0px;
+         
+        }
+        .cities .city .p span{
+            position: absolute;
+            color:white;
+            left:20px;
+            bottom:20px;
+        }
+        .about .agencies img{
+            width:350px;
+            margin-bottom: 20px;
+            height: 250px;
+            margin-left:20px;
+        }
+        .search{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 50px;
+            background-color: rgb(223, 218, 211);
+            padding:30px;
+            margin-left:0;
+            margin-right: 0;
+        }
+}

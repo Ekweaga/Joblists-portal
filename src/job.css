@@ -1,0 +1,101 @@
+
+  button{
+    background-color: rgb(3, 3, 43);
+    color:white;
+    border:none;
+    padding:10px;
+    margin: 20px;
+    cursor:pointer;
+}
+
+.jobe{
+    background-color: white;
+        padding-bottom: 30px;
+        margin:0;
+
+}
+.jobes{
+    border-left: 1px blue solid;
+    margin-top:20px;
+    background-color: white;
+    padding-top: 20px;
+  
+    display: block;
+    width:300px;
+    
+  
+  
+}
+.jobes .btn button{
+    background-color: rgb(255, 255, 255);
+    color: hsl(180,29%,50%);
+   margin:5px;
+   border:1px solid rgb(6, 204, 121);
+   padding:6px;
+    box-shadow: 2px 3px 1px  2px rgba(0, 0, 0, 0.35);
+}
+
+h2{
+    margin:10px;
+    font-size:18px;
+    text-transform: capitalize;
+}
+
+
+@media(max-width:700px){
+    .jobe{
+        padding-bottom: 20px;
+    }
+    .jobe .btn{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .jobes .btn button{
+            background-color: rgb(255, 255, 255);
+            color: hsl(180,29%,50%);
+           margin:10px;
+           border:1px solid rgb(6, 204, 121);
+           padding:6px;
+            box-shadow: 2px 3px 1px  2px rgba(0, 0, 0, 0.35);
+        }
+    .jobes{
+        border-left: 1px blue solid;
+        margin-top:20px;
+        background-color: white;
+        padding-top: 20px;
+        height:250px;
+        display: block;
+        width:300px;
+        
+      
+      
+    }
+    
+        .jobe .jobes .btn{
+            display:block;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: center;
+            }
+        
+        h2{
+            margin:10px;
+            font-size:18px
+        }
+        .jobes .btn button{
+            background-color: transparent;
+            color:green;
+           
+            
+        }
+        button{
+            background-color: rgb(3, 3, 43);
+            color:white;
+            border:none;
+            padding:10px;
+            margin: 20px;
+        }
+
+}

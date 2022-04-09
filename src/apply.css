@@ -1,0 +1,48 @@
+.form{
+    width:80%;
+    margin:auto;
+    padding-bottom:40px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+form{
+   
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:80px;
+   
+}
+
+.form form input{
+    width:320px;
+    padding:10px;
+    margin:15px;
+    border:none;
+    box-shadow: -3px 6px 10px  rgba(0, 0, 0, 0.35);
+}
+.form form input:focus{
+    outline:none;
+    border:none;
+}
+#id{
+    display:none;
+}
+.det{
+    width:80%;
+    margin:auto;
+    padding-top:30px;
+}
+
+@media(max-width:700px){
+    .form{
+        width:100%;
+        padding-bottom:20px;
+        margin:auto;
+    }
+    input{
+        width:300px;
+    }
+}

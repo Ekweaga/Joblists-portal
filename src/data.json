@@ -1,0 +1,20 @@
+{
+    "Data":[
+       {
+        "questionText":"When was the first prototype of a GUI created?",
+        "options":[{
+            "text":"1973",
+            "correct":"true"
+        },
+        {
+            "text":"1975"
+        },
+        {
+            "text":"1978"
+        }
+    ]
+
+
+       }
+    
+]}
