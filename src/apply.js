@@ -80,6 +80,7 @@ const Apply = ({jobs}) => {
                     <input type='text' placeholder='Github link' onChange={handleinput}name="git" required/>
                     <input type='text' placeholder='Stack' onChange={handleinput} required/>
                     <div style={{marginBottom:'-20px'}}>
+                      <div>CV/Resume should be in pdf forms</div>
                       <button style={{width:'250px'}}><label for="id">Upload Resume/Cv</label></button>  
                     <input type='file' placeholder='Upload Resume/CV' id="id"required />
                     </div>

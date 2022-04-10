@@ -19,11 +19,14 @@ import p3 from './p3.jpeg'
 import p4 from './p4.jpeg'
 import p5 from './p5.jpeg'
 import p6 from './p6.jpeg'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const Home = ({joblists}) => {
   const [jobs, setJobs] = useState([])
 
   useEffect(()=>{
+    Aos.init({duration:1000});
       setJobs(joblists)
   },[])
     
@@ -76,11 +79,11 @@ const Home = ({joblists}) => {
                 <div className='agencies'>
                     <br/>
                     <h1>Meet Our Employees</h1>
-                <img src={man1}  />
-                    <img src={man2} />
-                    <img src={man5} />
-                    <img src={man3} />
-                    <img src={man4}/>
+                <img src={man1}   data-aos="fade-in"/>
+                    <img src={man2}  data-aos="fade-in"/>
+                    <img src={man5}  data-aos="fade-in"/>
+                    <img src={man3}  data-aos="fade-in"/>
+                    <img src={man4} data-aos="fade-in"/>
                 </div>
            
             </div>
@@ -91,17 +94,17 @@ const Home = ({joblists}) => {
               Our Process
             </h2>
             <div className='process'>
-                    <div>
+                    <div data-aos="fade-in">
                         <section><b>1</b></section>
                         <b>Free Resume Assessments</b><br/>
                         <p>Employers at average spend 60 secs scanning resumes of potential workers</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-in">
                     <section><b>2</b></section>
                         <b>Job Fit Scoring</b><br/>
                         <p>Our new fit scorer show you relevant jobs that fit your skills and interest</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-in">
                     <section><b>3</b></section>
                         <b>Help Every step of the day</b><br/>
                         <p>Our career dvice section is full of information to help you identify the right fit</p>
@@ -116,15 +119,15 @@ const Home = ({joblists}) => {
     <p>Jobs are located in the following areas</p>
     <div class='city'>
     <div className='p'>
- <img src={p5} style={{height:'550px'}}/>     
+ <img src={p5} style={{height:'550px'}} data-aos="zoom-in"/>     
  <span>Nigeria, Lagos</span>
         </div>
         <div>
-            <div className='p'>
+            <div className='p'data-aos="fade-in">
             <img src={p1}/>
             <span>Nigeria, Abuja</span>
             </div>
-            <div className='p'>
+            <div className='p'data-aos="zoom-in">
             <img src={p2}/>
             <span>Nigeria, Calabar</span>
             </div>
@@ -132,7 +135,7 @@ const Home = ({joblists}) => {
             <img src={p3}/>
             <span>Nigeria, Jos</span>
             </div>
-            <div className='p'>
+            <div className='p' data-aos="slide-left">
             <img src={p4}/>
             <span>Nigeria, Edo</span>
             </div>
@@ -146,7 +149,7 @@ const Home = ({joblists}) => {
 
 
 </div>
-<div className='search'>
+<div className='search' data-aos="zoom-in">
   <div><b>  Let employers find you </b>
   <p>Navigate to our jobs list page and find your skill sets and interest</p></div>
    <button><Link to='jobs'>Get a Job</Link></button>
