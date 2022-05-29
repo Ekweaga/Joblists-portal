@@ -21,13 +21,17 @@ import p5 from './p5.jpeg'
 import p6 from './p6.jpeg'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
+import {BsEnvelope} from 'react-icons/bs'
+import {GoLocation} from 'react-icons/go'
+import {FcClock} from 'react-icons/fc'
+
 
 const Home = ({joblists}) => {
-  const [jobs, setJobs] = useState([])
+  const [jobs, setJobs] = useState(joblists)
 
   useEffect(()=>{
     Aos.init({duration:1000});
-      setJobs(joblists)
+     
   },[])
     
   return (
@@ -39,7 +43,7 @@ const Home = ({joblists}) => {
                         Find Your Perfect Tech Job Match
                     </h1>
                     <p>Find jobs, Employment and Career Opportunities</p><br/>
-                    <button><Link to='jobs'>Find Jobs</Link></button>
+                    <button><Link to='jobs'>Find Jobs{FcClock}</Link></button>
                 </div>
                 <div className='img'>
                     <img src={man5}/>
@@ -68,14 +72,7 @@ const Home = ({joblists}) => {
             
         </div>
             <div className='about' >
-            <div className='abouts' style={{width:'80%', margin:'auto'}}>
-                <h1>About Us</h1>
-                <p>An employment agency which matches employers to employees. JobHunt we operate public, federal, state
-                    . The positions offered are often temporary, contact, intern based and sometimes full time jobs. We keep track of employees who apply for
-                    a job post, skills and work history. This helps them match employees to new assignmnets. Many sectors outsources their rectruiting to employment agencies
-                    . We also offer both the employers and employess flexibility that more permanent work arrangements do not.
-                </p>
-                </div>
+            
                 <div className='agencies'>
                     <br/>
                     <h1>Meet Our Employees</h1>
@@ -88,6 +85,27 @@ const Home = ({joblists}) => {
            
             </div>
 <br/>
+
+                <div>
+                    <div style={{margin:'30px'}}><h1 style={{fontSize:'18px'}}>Our Current Open Positions </h1>
+                    <p style={{marginBottom:'30px'}}>Hiring ongoing for below opportunities </p>
+                    <div className='jobs'>
+                        <div >
+                            {jobs.slice(0,6).map((job)=>{
+                                return (<><div className='jobslist'><div style={{marginLeft:'30px'}}>
+                                    <h1 style={{fontSize:'18px',marginBottom:'10px'}}>{job.position}</h1>
+                                    <div><FcClock />{job.postedat} &nbsp;
+                                        <GoLocation />{job.location}&nbsp;&nbsp;&nbsp;
+                                        <span style={{color:'orangered'}}>{job.contract}</span>
+                                    </div>
+                                </div><div> <button style={{borderRadius:'10px', width:'150px',padding:'10px'}}><Link to={`/apply/${job.id}`}>Apply Now</Link></button></div></div></>)
+                            })}
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                        </div>
         
         <div className='processes'>
             <h2>
@@ -151,7 +169,7 @@ const Home = ({joblists}) => {
 </div>
 <div className='search' data-aos="zoom-in">
   <div><b>  Let employers find you </b>
-  <p>Navigate to our jobs list page and find your skill sets and interest</p></div>
+  <p>Upload your CV & apply to jobs in a single click</p></div>
    <button><Link to='jobs'>Get a Job</Link></button>
 </div>
 

@@ -124,19 +124,13 @@ body{
     font-size:20px;
 }
 .jobs{
-    padding:20px;
-    height:400px;
-   
+    width:100%;
 }
-.jobs .job{
-    column-count: 2;
+.jobs .jobslist{
+    display:flex;
+    justify-content: space-between;
     align-items: center;
-}
-.jobs .job div{
-    background-color: white;
-    padding:15px;
-    margin:20px;
-
+    width:100%;
 }
 .search{
     display:flex;
@@ -294,23 +288,13 @@ margin:auto;
         font-size: 20px;
     }
     .jobs{
-        padding:20px;
-        height:750px;
-       
+        width:100%;
     }
-    .jobs .job{
-       
-       column-count: 1;
-       
-    }
-    .jobs .job div{
-        background-color: white;
-        margin:20px;
-       
-        
-       
-       
-    
+    .jobs .jobslist{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     .search{
         display:block;

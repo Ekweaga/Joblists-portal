@@ -10,7 +10,7 @@ function Router({joblists}){
         <Switch>
 
 <Route path="/" exact>
-<Home/>
+<Home joblists={joblists}/>
 </Route>
 <Route path="/jobs" exact >
 <Jobs joblists={joblists}/>
