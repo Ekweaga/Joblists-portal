@@ -9,6 +9,8 @@ import { ToastContainer, toast } from 'react-toastify';
 const Apply = ({jobs}) => {
   const {id} = useParams()
   const [e, setJob]= useState({});
+  const [file, setFile] = useState(null);
+  let options = ["application/pdf"];
   const [input, setInput] = useState({
     name:'',
     email:'',
@@ -25,7 +27,13 @@ const Apply = ({jobs}) => {
   }
   const submit = (e)=>{
     e.preventDefault();
-    if(input.name !== "" || input.email !== "" ){
+    if( !file || !options.includes(file.type)){
+      alertify.warning('Uploaded resume not in the right format, use Pdf'); 
+      toast("Uploaded resume not in the right format, use Pdf");
+      console.log(file);
+    }
+    
+    else{
      
       alertify.success('Thanks for applying, we will get to you sonnest'); 
       toast("Thanks for applying, we will get to you sonnest");
@@ -40,9 +48,7 @@ const Apply = ({jobs}) => {
 
       })
     }
-    else{
-      alert("empty")
-    }
+    
   }
  
   
@@ -82,7 +88,7 @@ const Apply = ({jobs}) => {
                     <div style={{marginBottom:'-20px'}}>
                       <div>CV/Resume should be in pdf forms</div>
                       <button style={{width:'250px'}}><label for="id">Upload Resume/Cv</label></button>  
-                    <input type='file' placeholder='Upload Resume/CV' id="id"required />
+                    <input type='file' placeholder='Upload Resume/CV' id="id" required onChange={(e)=>{setFile(e.target.files[0])}}/>
                     </div>
                    
                       <button type="submit" style={{width:'250px',background:'orangered'}}>Submit</button>

@@ -17,11 +17,12 @@ form{
 }
 
 .form form input{
-    width:320px;
-    padding:10px;
+    width:350px;
+    padding:15px;
     margin:15px;
     border:none;
-    box-shadow: -3px 6px 10px  rgba(0, 0, 0, 0.35);
+    border-radius:15px;
+   
 }
 .form form input:focus{
     outline:none;
