@@ -26,9 +26,10 @@ const Job = ({job,setkeywords}) => {
       return <button key={id}  onClick={()=>setkeywords(key)}>{key}</button>
         })}
       </div>
-      <button><Link to={`/apply/${job.id}`}>Apply Now</Link></button>
+     
      
     </div>
+    <div> <button style={{borderRadius:'10px', width:'180px',padding:'10px',background:'blue'}}><Link to={`/apply/${job.id}`}>Apply Now</Link></button></div>
    
     </div>
      </>

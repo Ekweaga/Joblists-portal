@@ -12,15 +12,18 @@ body{
 
 .jobe{
     background-color: white;
-        padding-bottom: 30px;
-        margin:0;
+    margin-bottom:30px;
+        
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
 
 }
 .jobes{
-    border-left: 1px blue solid;
+    
     margin-top:20px;
-    background-color: white;
-    padding-top: 20px;
+   
+    padding:20px;
   
     display: block;
     width:350px;
@@ -50,7 +53,10 @@ h2{
 
 @media(max-width:700px){
     .jobe{
-        padding-bottom: 20px;
+        padding-left:  15px;
+        padding-right:15px;
+        display:flex;
+        flex-direction: column;
     }
     .jobe .btn{
         display:flex;
@@ -69,11 +75,11 @@ h2{
            
         }
     .jobes{
-        border-left: 1px blue solid;
+       
         margin-top:20px;
-        background-color: white;
+       
         padding-top: 20px;
-        height:250px;
+        height:200px;
         display: block;
         width:300px;
         padding-bottom: 30px;
@@ -107,4 +113,10 @@ h2{
             margin: 20px;
         }
 
+}
+@media(width:360px){
+    .jobe{
+        padding-left:15px;
+        padding-right:15px;
+    }
 }

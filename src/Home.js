@@ -72,33 +72,33 @@ const Home = ({joblists}) => {
             
         </div>
             <div className='about' >
-            
+            <h1>Meet Our Employees</h1>
                 <div className='agencies'>
-                    <br/>
-                    <h1>Meet Our Employees</h1>
-                <img src={man1}   data-aos="fade-in"/>
-                    <img src={man2}  data-aos="fade-in"/>
-                    <img src={man5}  data-aos="fade-in"/>
-                    <img src={man3}  data-aos="fade-in"/>
-                    <img src={man4} data-aos="fade-in"/>
+                 
+                   
+               <div data-aos="fade-in"><span>UI/UX DESIGNER</span> <img src={man1}   /></div>
+                <div data-aos="fade-in">  <span>DIGITAL MARKETER</span>  <img src={man2}  /></div>
+                   <div data-aos="fade-in"> <span>FLUTTER DEVELOPER</span><img src={man5} /></div>
+                  <div data-aos="fade-in"> <span>FULL-STACK DEVELOPER</span> <img src={man3}  /></div>
+                   
                 </div>
            
             </div>
 <br/>
 
                 <div>
-                    <div style={{margin:'30px'}}><h1 style={{fontSize:'18px'}}>Our Current Open Positions </h1>
-                    <p style={{marginBottom:'30px'}}>Hiring ongoing for below opportunities </p>
+                    <div style={{margin:'80px'}}><h1 style={{fontSize:'25px'}}>Our Current Open Positions </h1>
+                    <p style={{marginBottom:'60px'}}>Hiring ongoing for below opportunities </p>
                     <div className='jobs'>
                         <div >
                             {jobs.slice(0,6).map((job)=>{
-                                return (<><div className='jobslist'><div style={{marginLeft:'30px'}}>
-                                    <h1 style={{fontSize:'18px',marginBottom:'10px'}}>{job.position}</h1>
+                                return (<><div className='jobslist'><div style={{marginLeft:'0px'}}>
+                                    <h1 style={{fontSize:'18px',marginBottom:'10px',marginLeft:'0px'}}>{job.position}</h1>
                                     <div><FcClock />{job.postedat} &nbsp;
                                         <GoLocation />{job.location}&nbsp;&nbsp;&nbsp;
                                         <span style={{color:'orangered'}}>{job.contract}</span>
                                     </div>
-                                </div><div> <button style={{borderRadius:'10px', width:'150px',padding:'10px'}}><Link to={`/apply/${job.id}`}>Apply Now</Link></button></div></div></>)
+                                </div><div> <button style={{borderRadius:'10px', width:'200px',padding:'10px',background:'blue'}}><Link to={`/apply/${job.id}`}>Apply Now</Link></button></div></div></>)
                             })}
                         </div>
                     </div>
