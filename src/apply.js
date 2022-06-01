@@ -5,6 +5,7 @@ import alertify from 'alertifyjs';
 import 'alertifyjs/build/css/alertify.css';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+  import {FcClock} from 'react-icons/fc'
 
 const Apply = ({jobs}) => {
   const {id} = useParams()
@@ -67,7 +68,7 @@ const Apply = ({jobs}) => {
             <div className='form'>
               <div className='det'>
               <h3 style={{marginTop:'20px'}}>{e.level} {e.role}</h3> 
-              <span>{e.postedat}</span><br/>
+              <span><FcClock/>{e.postedat}</span><br/>
               <span> Exp : {e.exp}</span><br/><br/>
             <p> {e.des}</p>
             <span style={{float:'left',marginTop:'10px'}}>Location : {e.location}</span>
@@ -76,7 +77,7 @@ const Apply = ({jobs}) => {
           
                 <form onSubmit={submit}>
                   <div>
-                    Apply Now!!
+                    Fill in your Credentials
                   </div>
                     <input type='text' placeholder='First Name' required onChange={handleinput} name="name"/>
                     <input type='text' placeholder='Last Name' required  onChange={handleinput} name="email"/>

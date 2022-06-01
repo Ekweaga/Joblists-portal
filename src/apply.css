@@ -47,3 +47,13 @@ form{
         width:300px;
     }
 }
+@media(width:360px){
+    .form form input{
+        width:300px;
+        padding:15px;
+        margin:15px;
+        border:none;
+        border-radius:15px;
+       
+    }
+}

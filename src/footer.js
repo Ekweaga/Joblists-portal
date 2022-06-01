@@ -13,9 +13,9 @@ const Footer = () => {
 <div className='find'>
 <ul>
   <li><Link to="/">Home</Link></li>
-    <li><Link to="/jobs">Browser jobs</Link></li>
+    <li><Link to="/jobs">Job Links</Link></li>
     <li>See Employees</li>
-    <li>Job Links</li>
+   
   </ul>
 </div>
 <div>
